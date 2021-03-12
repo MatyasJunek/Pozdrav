@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Content="Pozdrav!"
+                Click="Button_Click" Margin="131,10,47,105" RenderTransformOrigin="0.507,0.734"/>
+        <Label Grid.Row="0" Grid.Column="0" FontSize="20" Content="Vložte své jméno:"/>
+        <TextBox Grid.Row="0" Margin="181,10,160,105" Grid.ColumnSpan="2" Name ="textBox"/>
+
+        <Label Name="label" Grid.Row="0" Grid.Column="0"  FontSize="30" Grid.ColumnSpan="3" Margin="0,60,0,119" Grid.RowSpan="2"  />
+    </Grid>
+</Window>
